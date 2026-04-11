@@ -1,16 +1,75 @@
-# React + Vite
+# SponderBird - Game Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+### Made by PG29 Julian R
+### Last Updated 4/10/2026
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+A web-based game portal for SponderBird built with React, Firebase Authentication, and Firestore.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Email/password and Google authentication
+- Role-based access (Player and Admin)
+- User profile screen with stats
+- Live leaderboard pulling from Firestore
+- Admin dashboard with user management and role toggling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Setup
+
+### 1. Clone the repository
+
+Clone: https://github.com/Enb4rr/CloudComputing_SponderBird
+
+### 2. Install dependencies
+
+npm install
+
+### 3. Create a `.env` file
+
+Create a `.env` file in the root of the project with the following Firebase credentials:
+
+VITE_FIREBASE_API_KEY=AIzaSyAc4jxOn7Dh6fVb0XGYDWTdWFXd0iLKKD4
+VITE_FIREBASE_AUTH_DOMAIN=cloudcomputing-670d8.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=cloudcomputing-670d8
+VITE_FIREBASE_STORAGE_BUCKET=cloudcomputing-670d8.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=355101850896
+VITE_FIREBASE_APP_ID=1:355101850896:web:f26506617f3bf4c7273995
+
+VITE_GAME_URL=https://enb4rr.github.io/Pipelines_SponderBird/
+
+### 4. Run the development server
+
+npm run dev
+
+---
+
+## Test Accounts
+
+| Role   | Email | Password       |
+|--------|-------|----------------|
+| Player | raf@ramenday.com | concussion1234 |
+| Admin  | spencer@bettleball.com  | gonk1234       |
+
+---
+
+## Seeding Mock Data
+
+To push mock users and scores to Firestore (you don't need to do this step for testing):
+
+node scripts/ingestScores.js
+
+To clear mock data:
+
+node scripts/ingestScores.js --clear
+
+---
+
+## Notes
+
+- Had to keep line 4 at 'firebase.js', for some reason when removed the project stops working (happened in class, never found a solution)
+- Reused a lot of the provided styles, class naming may not be 100% consistent

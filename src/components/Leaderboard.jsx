@@ -4,7 +4,7 @@ import { db } from "../firebase.js";
 
 const LEADERBOARD_LIMIT = 10;
 
-export default function Leaderboard({ currentUserId }) {
+export default function Leaderboard({currentUserId}) {
     const [leaders, setLeaders] = useState([]);
     const [loading, setLoading] = useState(true);
     

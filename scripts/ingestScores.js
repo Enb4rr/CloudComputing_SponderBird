@@ -105,6 +105,7 @@ async function pushScores() {
             highScore,
             gamePlayer: sessionCount,
             isMock: true,
+            role: "player",
         });
         
         console.log(`${player.name} -> ${sessionCount} game, ${highScore} high score`)
