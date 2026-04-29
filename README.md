@@ -1,9 +1,9 @@
-# SponderBird - Game Portal
+# SponderBird - Game Portal + Telemetry System
 
 ---
 
 ### Made by PG29 Julian R
-### Last Updated 4/10/2026
+### Last Updated 4/28/2026
 
 ---
 
@@ -16,6 +16,8 @@ A web-based game portal for SponderBird built with React, Firebase Authenticatio
 - User profile screen with stats
 - Live leaderboard pulling from Firestore
 - Admin dashboard with user management and role toggling
+- Username edition
+- Telemetry System in Admin's dashboard
 
 ---
 
