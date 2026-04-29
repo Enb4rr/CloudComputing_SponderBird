@@ -103,7 +103,7 @@ export default function GamePortal({user, userData}) {
             {activeTab === 'userProfile' && (
                 <div className="tab-panel">
                     <p>
-                        <UserProfile userData={userData} />
+                        <UserProfile user={user} userData={userData} />
                     </p>
                 </div>
             )}

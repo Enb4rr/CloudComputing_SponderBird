@@ -909,3 +909,17 @@ code {
 .btn-role-toggle:hover {
     background: var(--bg-highest);
 }
+
+.edit-name-input {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    outline: none;
+}
+
+.edit-name-input:focus {
+    border-color: var(--accent);
+}
